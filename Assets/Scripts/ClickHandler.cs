@@ -9,14 +9,14 @@ public class ClickHandler : MonoBehaviour
     private ClickAddersController _clickAddersController;
 
 
-    public void Init(List<ClickAdder> clickAdders)
+    public void Init(List<Iet> clickAdders)
     {
         _clickAddersController = new ClickAddersController(clickAdders);
     }
 
     private void Start()
     {
-        Init(new List<ClickAdder>() { new ClickAdder(2,1)});
+        Init(new List<Iet>());
         _counterPoints = FindObjectOfType<CounterPoints>();
     }
 

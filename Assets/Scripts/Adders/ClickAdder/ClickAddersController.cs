@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class ClickAddersController
 {
-    private List<ClickAdder> _clickAdders;
+    private List<Iet> _clickAdders;
 
-    public ClickAddersController(List<ClickAdder> clickAdders)
+    public ClickAddersController(List<Iet> clickAdders)
     {
         _clickAdders = clickAdders;
     }
@@ -14,7 +14,7 @@ public class ClickAddersController
     public int Get()
     {
         int points = 0;
-        foreach (var item in _clickAdders)
+        foreach (Iet item in _clickAdders)
         {
             points += item.GetPoints();
         }
